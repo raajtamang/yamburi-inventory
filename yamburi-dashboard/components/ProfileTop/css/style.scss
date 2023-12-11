@@ -1,0 +1,39 @@
+.profiletop{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    &-div{
+        display: flex;
+        &--mode{
+            padding: 40px;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            width: 60px;
+            // border: 1px solid black;
+            &_btn{
+                display: flex;
+                width: 50px;
+                height: 25px;
+                border-radius: 15px;
+                padding: 3px;
+                background-color: #15679E;
+                &__white{
+                    background-color: #FFF;
+                    border-radius: 50%;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            &_text{
+                width: 80px;
+            }
+        }
+        &--profile{
+            align-items: center;
+            display: flex;
+
+        }
+
+    }   
+}

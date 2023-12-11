@@ -1,0 +1,33 @@
+.profiletop {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.profiletop-div {
+  display: flex;
+}
+.profiletop-div--mode {
+  padding: 40px;
+  width: 60px;
+}
+.profiletop-div--mode_btn {
+  display: flex;
+  width: 50px;
+  height: 25px;
+  border-radius: 15px;
+  padding: 3px;
+  background-color: #15679E;
+}
+.profiletop-div--mode_btn__white {
+  background-color: #FFF;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+.profiletop-div--mode_text {
+  width: 80px;
+}
+.profiletop-div--profile {
+  align-items: center;
+  display: flex;
+}/*# sourceMappingURL=style.css.map */
