@@ -13,7 +13,53 @@ type tbldata = {
   updated: Date;
   action: string;
 }[];
+
+type userInput = string;
 const page = (props: Props) => {
+  const [userinput, setUserinput] = useState<userInput>("");
+
+
+
+
+  //   the data from the api
+  const apidata: tbldata = [
+    {
+      id: 1,
+      firstname: "default",
+      lastname: "default",
+      role: "employee",
+      status: "active",
+      updated: new Date('2022-02-02'),
+      action: "Details"
+    },
+    {
+      id: 2,
+      firstname: "default",
+      lastname: "default",
+      role: "employee",
+      status: "active",
+      updated: new Date('2022-02-02'),
+      action: "Details"
+    },
+    {
+      id: 3,
+      firstname: "default",
+      lastname: "default",
+      role: "employee",
+      status: "active",
+      updated: new Date('2022-02-02'),
+      action: "Details"
+    },
+    {
+      id: 4,
+      firstname: "ab",
+      lastname: "default",
+      role: "employee",
+      status: "active",
+      updated: new Date('2022-02-02'),
+      action: "Details"
+    }
+  ]
   const [tabledata, setTabledata] = useState<tbldata>([
     {
       id: 1,
@@ -44,14 +90,29 @@ const page = (props: Props) => {
     },
     {
       id: 4,
-      firstname: "default",
+      firstname: "ab",
       lastname: "default",
       role: "employee",
       status: "active",
       updated: new Date('2022-02-02'),
-      action: "Details"
+      action: "Details" 
     }
-  ])
+  ]);
+  const inputchanged = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
+    setUserinput(e.target.value);
+
+    const thedata = [...apidata];
+    const filtereddata = thedata.filter(data => {
+      return data.firstname.toLowerCase().includes(e.target.value.toLowerCase())
+      // data.ordernumber.includes(userinput)
+    });
+    setTabledata(filtereddata);
+    console.log(filtereddata);
+    console.log("the filter is running");
+    console.log(tabledata);
+
+  }
 
 
   return (
@@ -70,7 +131,7 @@ const page = (props: Props) => {
                 </g>
               </svg>
 
-              <input type='text' placeholder='search' />
+              <input type='text' placeholder='search' value={userinput} onChange={inputchanged} />
             </div>
 
             <div className='employee-main--top_bottom__addemployee'>

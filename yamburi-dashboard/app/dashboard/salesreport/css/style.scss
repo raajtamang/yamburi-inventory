@@ -1,0 +1,95 @@
+.salesreport {
+    width: 100%;
+    // background-color: white;
+    padding: 40px;
+
+    &-main {
+
+        background-color: white;
+
+        &--top {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            &_head {
+                background-color: #15679E;
+                padding: 10px;
+                border-radius: 10px;
+
+                h2 {
+                    font-family: Lato;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 1px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #fff;
+                }
+            }
+
+            &_bottom {
+                // border: 1px solid black;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &__search {
+                    display: flex;
+                    align-items: center;
+                    border-radius: 10px;
+                    border: 1px solid black;
+                    padding: 5px;
+
+                    input {
+                        border-radius: 10px;
+                        border: none;
+                        outline: none;
+
+                    }
+
+                }
+
+
+
+
+            }
+        }
+
+        &--reportdiv {
+            padding: 20px;
+
+            &_item {
+                border: none;
+                border-radius: 10px;
+                padding:5px  20px;
+                background-color: #D9D9D9;
+                margin-top: 10px;
+
+                &__head {
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 15px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                    color: #15679E;
+                }
+
+                &__bottom {
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 10px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                    color: #616161;
+
+                }
+            }
+        }
+
+    }
+}

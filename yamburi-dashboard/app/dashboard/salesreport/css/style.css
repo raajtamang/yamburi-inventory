@@ -1,0 +1,71 @@
+.salesreport {
+  width: 100%;
+  padding: 40px;
+}
+.salesreport-main {
+  background-color: white;
+}
+.salesreport-main--top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.salesreport-main--top_head {
+  background-color: #15679E;
+  padding: 10px;
+  border-radius: 10px;
+}
+.salesreport-main--top_head h2 {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+.salesreport-main--top_bottom {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.salesreport-main--top_bottom__search {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px;
+}
+.salesreport-main--top_bottom__search input {
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.salesreport-main--reportdiv {
+  padding: 20px;
+}
+.salesreport-main--reportdiv_item {
+  border: none;
+  border-radius: 10px;
+  padding: 5px 20px;
+  background-color: #D9D9D9;
+  margin-top: 10px;
+}
+.salesreport-main--reportdiv_item__head {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #15679E;
+}
+.salesreport-main--reportdiv_item__bottom {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #616161;
+}/*# sourceMappingURL=style.css.map */
